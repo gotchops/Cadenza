@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.KeySignaturesController">
+   <children>
+      <ImageView id="keys_image" fx:id="keysImg" fitHeight="300.0" fitWidth="300.0" layoutX="150.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+         <viewport>
+            <Rectangle2D />
+         </viewport></ImageView>
+      <GridPane layoutX="127.0" layoutY="351.0" prefWidth="346.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="5.0" prefWidth="50.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Button id="cSharpBtn" fx:id="cSharpBtn" mnemonicParsing="false" prefHeight="25.0" prefWidth="40.0" text="C♯" />
+            <Button id="cBtn" fx:id="cBtn" mnemonicParsing="false" prefHeight="25.0" prefWidth="40.0" text="C" GridPane.rowIndex="1" />
+            <Button id="cFlatBtn" fx:id="cFlatBtn" mnemonicParsing="false" prefHeight="25.0" prefWidth="40.0" text="C♭" GridPane.rowIndex="2" />
+            <Button id="dBtn" fx:id="dBtn" mnemonicParsing="false" prefHeight="25.0" prefWidth="40.0" text="D" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button id="dFlatBtn" fx:id="dFlatBtn" mnemonicParsing="false" prefHeight="25.0" prefWidth="40.0" text="D♭" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button id="eBtn" fx:id="eBtn" mnemonicParsing="false" prefHeight="25.0" prefWidth="40.0" text="E" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button id="eFlatBtn" fx:id="eFlatBtn" mnemonicParsing="false" prefHeight="25.0" prefWidth="40.0" text="E♭" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Button id="fSharpBtn" fx:id="fSharpBtn" mnemonicParsing="false" prefHeight="25.0" prefWidth="40.0" text="F♯" GridPane.columnIndex="3" />
+            <Button id="fBtn" fx:id="fBtn" mnemonicParsing="false" prefHeight="25.0" prefWidth="40.0" text="F" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Button id="gBtn" fx:id="gBtn" mnemonicParsing="false" prefHeight="25.0" prefWidth="40.0" text="G" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <Button id="gFlatBtn" fx:id="gFlatBtn" mnemonicParsing="false" prefHeight="25.0" prefWidth="40.0" text="G♭" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <Button id="aBtn" fx:id="aBtn" mnemonicParsing="false" prefHeight="25.0" prefWidth="40.0" text="A" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+            <Button id="aFlatBtn" fx:id="aFlatBtn" mnemonicParsing="false" prefHeight="25.0" prefWidth="40.0" text="A♭" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+            <Button id="bBtn" fx:id="bBtn" mnemonicParsing="false" prefHeight="25.0" prefWidth="40.0" text="B" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+            <Button id="bFlatBtn" fx:id="bFlatBtn" mnemonicParsing="false" prefHeight="25.0" prefWidth="40.0" text="B♭" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+      <RadioButton id="majRadioBtn" fx:id="majRadioBtn" layoutX="499.0" layoutY="14.0" mnemonicParsing="false" selected="true" text="Major" />
+      <RadioButton id="minRadioBtn" fx:id="minRadioBtn" layoutX="499.0" layoutY="34.0" mnemonicParsing="false" text="Minor" />
+   </children>
+</AnchorPane>

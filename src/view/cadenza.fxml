@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TabPane id="tab_pane" prefHeight="500.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab id="notesTab" fx:id="notesTab" text="Notes" />
+          <Tab id="key_sigs_tab" fx:id="keySigsTab" text="Key Signatures" />
+            <Tab id="keyboard_tab" fx:id="keyboardTab" text="Keyboard Notes" />
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
